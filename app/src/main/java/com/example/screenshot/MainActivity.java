@@ -40,6 +40,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         XRScreenHot.with(this).start(new ScreenHotListener() {
+            /**
+             *
+             * @param path 截图路径
+             * @param dateTaken 时间戳
+             */
             @Override
             public void onScreenHotSuccess(final String path, long dateTaken) {
                 Log.i("Mango", "path:" + path + "        dateTaken:" + dateTaken);
