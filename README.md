@@ -41,4 +41,8 @@ code
       
       //回收
       XRScreenHot.with(context).recycle();
+      
+ 参考：
+ 
+ https://blog.csdn.net/xiaohanluo/article/details/53737655
 
