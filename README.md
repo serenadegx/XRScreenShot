@@ -7,7 +7,7 @@
 
 3.优化线程操作(不需要再写子线程更新UI的操作)
 
-![image](https://github.com/serenadegx/XRWebview/blob/master/1545730427868.gif)
+![image](https://github.com/serenadegx/XRScreenShot/blob/master/1550730578106.gif)
 
 # 使用
 
@@ -25,7 +25,7 @@ Add the dependency
 	    dependencies {
 	        implementation 'com.github.serenadegx:XRScreenShot:1.0.1'
 	    }
-      
+code
       
       XRScreenHot.with(this).start(new ScreenHotListener() {
             @Override
