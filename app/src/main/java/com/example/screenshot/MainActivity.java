@@ -75,6 +75,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        XRScreenHot.with(this).recycle();
+//        XRScreenHot.with(this).recycle();
     }
 }
