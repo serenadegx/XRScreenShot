@@ -28,12 +28,17 @@ Add the dependency
 code
       
       XRScreenHot.with(this).start(new ScreenHotListener() {
+            /**
+             * 
+             * @param path 截图路径
+             * @param dateTaken 时间戳
+             */
             @Override
             public void onScreenHotSuccess(final String path, long dateTaken) {
-                
+                               iv.setImageURI(Uri.fromFile(new File(path)));
             }
-      });
+        });
       
       //回收
-      XRScreenHot.with(this).recycle();
+      XRScreenHot.with(context).recycle();
 
