@@ -1,24 +1,19 @@
 package com.example.screenshot;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
-import android.database.ContentObserver;
-import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.HandlerThread;
-import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
+
+import com.example.screenhotlibrary.ScreenHotListener;
+import com.example.screenhotlibrary.XRScreenHot;
 
 import java.io.File;
 
@@ -52,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        init();
     }
 
 
@@ -82,9 +76,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         XRScreenHot.with(this).recycle();
-
     }
-
-
-
 }

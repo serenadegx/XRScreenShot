@@ -1,4 +1,4 @@
-package com.example.screenshot;
+package com.example.screenhotlibrary;
 
 import android.Manifest;
 import android.content.Context;
@@ -20,7 +20,7 @@ public class XRScreenHot {
     };
 
     /**
-     * 读取媒体数据库时需要读取的列
+     * 读取媒体数据库时需要读取的列(截图路径，截图时间戳)
      */
     private static final String[] MEDIA_PROJECTIONS = {
             MediaStore.Images.ImageColumns.DATA,
