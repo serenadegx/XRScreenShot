@@ -27,7 +27,7 @@ Add the dependency
 	    }
 code
       
-      XRScreenHot.with(this).start(new ScreenHotListener() {
+      XRScreenHot.with(context).start(new ScreenHotListener() {
             /**
              * 
              * @param path 截图路径
