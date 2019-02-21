@@ -42,6 +42,8 @@ code
       //回收
       XRScreenHot.with(context).recycle();
       
+ 注意：6.x及更高系统，需要权限适配（存储）
+      
  参考：
  
  https://blog.csdn.net/xiaohanluo/article/details/53737655
